@@ -1,0 +1,165 @@
+
+:root{
+    --background-color: #202124;
+    --color: white;
+    --font:  Arial, Helvetica, sans-serif;
+    --hover:#303134;
+}
+body
+{
+    background-color: var(--background-color);
+    color:white;
+}
+
+.top-link
+{
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.top-link a{
+    color: white;
+    font-family: var(--font);
+    margin-right: 20px;
+    text-decoration: none;
+}
+.top-link a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: var(--font);
+    font-size:50px;
+    translate:0 40px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search
+{
+    width: 30%;
+    height: 4vh;
+    border:1px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding-left: 10px;
+    color:var(--color);
+    margin-top: 30px;
+}
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+}
+.button
+{
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:var(--hover);
+    color:white;
+    font-family: var(--font);
+    width:7vw;
+    height: 3.5vh;
+}
+
+.current
+{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#4487f6;
+    padding-left: 9%;
+}
+
+.top-container
+{
+    width: 100%;
+    display: flex;
+    font-family: var(--font);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-container h3
+{
+    font-size: larger;
+}
+
+.top-container a{
+    color:white;
+    text-decoration: none;
+}
+.top-container a:hover{
+    text-decoration: underline;
+}
+
+.form-container
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.label-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.input-container
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-container label
+{
+    margin-top: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:#bdc1c6;
+}
+.input-container input
+{
+    outline: none !important;
+    margin-left: 60px;
+    margin-top: 40px;
+    height: 30px;
+    width: 30vw;
+    background-color: var(--background-color);
+    border: 1px solid rgb(97, 97, 97);
+    color:white;
+}
+
+.input-container input:focus{
+    border:1px solid #4487f6;
+}
+
+.advs
+{
+    background-color: #4487f6 !important;
+    border: none !important;
+    width: 30% !important;
+    margin-left:70% !important;
+}
+
+.advs-heading
+{
+    color: #f28b82;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:1%;
+    border-bottom:1px solid var(--hover);
+}

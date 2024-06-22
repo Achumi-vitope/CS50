@@ -1,0 +1,13 @@
+{% extends 'encyclopedia/layout.html' %}
+    {% block title %}
+        Try
+    {% endblock %}
+
+    {% block body %}
+    <h1>Top results</h1>
+        {% for entry in reco %}
+            <ul>
+                <a href = "{% url 'fetch_searched' entry %}"><li>{{entry}}</li></a>
+            </ul>
+        {% endfor %}
+    {% endblock %}
